@@ -62,7 +62,7 @@ function AppContent() {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/check-session/', {
+      const response = await fetch('https://artuckeavenuebackend-4.onrender.com/check-session/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
