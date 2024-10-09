@@ -140,7 +140,7 @@ export default function Blog() {
          >Written By: &nbsp;
          </p>
          <Link 
-          to = {`https://artuckeavenuebackend-4.onrender.com/${username}`}
+          to = {`https://article-avenue-frontend.vercel.app/${username}`}
           style={{
               fontWeight:'bold',
               fontFamily:'Times New Roman, serif',
@@ -165,7 +165,7 @@ export default function Blog() {
           >&nbsp;&nbsp; &nbsp;&nbsp; Posted On: {formatDate(date)}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }} className="thumbnail container">
             <img 
-              src={`https://artuckeavenuebackend-4.onrender.com${thumbnail}`} 
+              src={`http://127.0.0.1:8000${thumbnail}`} 
               style={{ width: '40em', height: '20em',  }}
             />
           </div>
