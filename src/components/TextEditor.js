@@ -348,7 +348,7 @@ const RichTextEditor = ({ mode }) => {
         formData.append('description', JSON.stringify(description));
     
         try {
-            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/', {
+            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/insert-completed-article/', {
                 method: 'POST',
                 body: formData,  // No need for headers, FormData sets them automatically
             });
