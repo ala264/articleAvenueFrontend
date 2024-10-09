@@ -1,0 +1,19 @@
+h2{
+  text-align: center;
+}
+/*
+.content-container {
+  padding: 20px;
+  background-color: #404040;
+}
+*/
+
+
+.content-container.sign-in {
+  padding: 0;
+}
+
+.Sidebar {
+  margin-bottom: 20px;
+}
+

@@ -1,0 +1,102 @@
+/* Default (light) mode */
+#sidebar {
+  background-color: #00274d; /* Dark blue background color */
+  color: #fff; /* White text color */
+  min-height: 100vh;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition between light and dark modes */
+}
+
+/* Dark mode styles */
+body.dark-mode #sidebar {
+  background-color: black !important; /* Black background for dark mode */
+  color: white; /* White text for dark mode */
+}
+
+/* Styling for nav links within the sidebar */
+#sidebar .nav-link {
+  color: #c0c0c0; /* Light grey text */
+  padding: 0.75rem 1rem; /* Padding around the links */
+  border-radius: 0.25rem; /* Rounded corners for links */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for link hover states */
+}
+
+body.dark-mode #sidebar .nav-link {
+  color: white; /* Make the links white in dark mode */
+}
+
+#sidebar .nav-link i {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Styling for nav link hover state */
+#sidebar .nav-link:hover {
+  color: #fff; /* White text on hover */
+  background-color: #003366; /* Slightly lighter dark blue background */
+}
+
+body.dark-mode #sidebar .nav-link:hover {
+  background-color: #333333; /* Slightly lighter black background in dark mode */
+}
+
+/* Styling for the active nav link */
+#sidebar .nav-link.active {
+  color: #fff; /* White text for active link */
+  background-color: darkorange; /* Orange background for active link */
+}
+
+body.dark-mode #sidebar .nav-link.active {
+  background-color: #007FFF; /* Keep the active link orange in dark mode */
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  #sidebar {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  #sidebar .nav-link {
+      text-align: center; /* Center text on small screens */
+  }
+}
+
+#sidebar {
+  transition: width 0.3s;
+}
+
+#sidebar.collapsed {
+  width: 95px; /* Adjust as needed */
+}
+
+#sidebar.collapsed .nav-link span {
+  display: none;
+}
+
+#sidebar.collapsed .nav-link {
+  justify-content: center;
+}
+
+#sidebar .nav-link i {
+  font-size: 24px;
+}
+
+#sidebar .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust margin for sticky content */
+.position-sticky {
+  margin-left: 10px;
+}

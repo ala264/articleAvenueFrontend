@@ -1,0 +1,41 @@
+h5{
+    text-align: left; 
+ }
+ 
+ /* Container for all saved articles */
+ .article-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center; /* Center-aligns items horizontally */
+     padding: 10px;
+     margin-top: 20px;
+ }
+ 
+ /* Each saved article */
+ .saved-article {
+     width: 53%; /* Full width of the container */
+     text-align: center; /* Center-aligns text */
+     margin-bottom: 20px; /* Space between articles */
+     min-width: 700px;
+     margin: auto;
+ }
+ 
+ .saved-article:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.article-thumbnail-container {
+    max-height: 500px; /* Limits the height of the image container */
+    border:none;
+    padding: 0; 
+    width: 70%;
+    margin: auto;
+}
+
+.article-thumbnail {
+    width: 100%; /* Ensures the image doesn't exceed the container's width */
+    object-fit: cover;
+    height: auto;
+    max-height: 100%; 
+}
