@@ -206,7 +206,7 @@ const TestComponentViewSaved = ({mode}) => {
                      {entry.thumbnail && (
                         <div className="article-thumbnail-container">
                             <img 
-                                src={`https://artuckeavenuebackend-4.onrender.com/${entry.thumbnail}`} 
+                                src={`https://artuckeavenuebackend-4.onrender.com${entry.thumbnail}`} 
                                 className="article-thumbnail"
                                 alt={entry.title}
                             />
