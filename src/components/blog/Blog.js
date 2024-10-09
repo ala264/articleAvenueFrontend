@@ -165,7 +165,7 @@ export default function Blog() {
           >&nbsp;&nbsp; &nbsp;&nbsp; Posted On: {formatDate(date)}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }} className="thumbnail container">
             <img 
-              src={`https://article-avenue-frontend.vercel.app${thumbnail}`} 
+              src={`https://artuckeavenuebackend-4.onrender.com${thumbnail}`} 
               style={{ width: '40em', height: '20em',  }}
             />
           </div>
