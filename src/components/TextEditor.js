@@ -106,7 +106,7 @@ const RichTextEditor = ({ mode }) => {
                     setId(id);
                     setTitle(title);
                     setType(type);
-                    fetchImage(`http://127.0.0.1:8000${thumbnail}`, filename).then(file => {
+                    fetchImage(`https://artuckeavenuebackend-4.onrender.com${thumbnail}`, filename).then(file => {
                         if (file) setThumbnail(file);
                     });
                     setCategory(category)
@@ -124,7 +124,7 @@ const RichTextEditor = ({ mode }) => {
     useEffect(()=>{
             const fetchSessionData = async () => {
               try {
-                const response = await fetch('http://127.0.0.1:8000/get-session-data/', {
+                const response = await fetch('https://artuckeavenuebackend-4.onrender.com/get-session-data/', {
                   method: 'GET',
                   credentials: 'include', // Include cookies in the request
                   headers: {
@@ -348,7 +348,7 @@ const RichTextEditor = ({ mode }) => {
         formData.append('description', JSON.stringify(description));
     
         try {
-            const response = await fetch('http://127.0.0.1:8000/insert-completed-article/', {
+            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/', {
                 method: 'POST',
                 body: formData,  // No need for headers, FormData sets them automatically
             });
@@ -375,7 +375,7 @@ const RichTextEditor = ({ mode }) => {
         formData.append('description', JSON.stringify(description));
     
         try {
-            const response = await fetch('http://127.0.0.1:8000/insert-draft-article/', {
+            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/insert-draft-article/', {
                 method: 'POST',
                 body: formData,  // No need for headers, FormData sets them automatically
             });
@@ -401,7 +401,7 @@ const RichTextEditor = ({ mode }) => {
         formData.append('description', JSON.stringify(description));
            
         try {
-            const response = await fetch(`http://127.0.0.1:8000/update-draft-article/${article_id}/`, {
+            const response = await fetch(`https://artuckeavenuebackend-4.onrender.com/update-draft-article/${article_id}/`, {
                 method: 'POST', // Use PUT or PATCH depending on your backend implementation
                 body: formData
             });
@@ -427,7 +427,7 @@ const RichTextEditor = ({ mode }) => {
         formData.append('description', JSON.stringify(description));
         
         try {
-            const response = await fetch(`http://127.0.0.1:8000/update-completed-article/${article_id}/`, {
+            const response = await fetch(`https://artuckeavenuebackend-4.onrender.com/update-completed-article/${article_id}/`, {
                 method: 'POST', // Use PUT or PATCH depending on your backend implementation
                 body: formData  
             });
@@ -447,7 +447,7 @@ const RichTextEditor = ({ mode }) => {
         // Handle the delete action
         try {
             // Send DELETE request to the backend
-            const response = await fetch(`http://127.0.0.1:8000/delete-draft-article/${article_id}/`, {
+            const response = await fetch(`https://artuckeavenuebackend-4.onrender.com/delete-draft-article/${article_id}/`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

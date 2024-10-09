@@ -50,7 +50,7 @@ const BecomeAuthor = () => {
     }
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/submit-author-response/', {
+      const res = await fetch('https://artuckeavenuebackend-4.onrender.com/submit-author-response/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -112,7 +112,7 @@ function Author({ author, date, profilePic }: AuthorProps) {
       >
         <Avatar
           alt={author}
-          src={`http://127.0.0.1:8000${profilePic}`}
+          src={`https://artuckeavenuebackend-4.onrender.com${profilePic}`}
           sx={{ width: 24, height: 24 }}
         />
         <Typography variant="caption" fontFamily='Roboto, sans-seriff'>
@@ -241,7 +241,7 @@ export default function MainContent({mode}) {
 
   const getArticles = async () => {
       try {
-          const response = await fetch('http://127.0.0.1:8000/get-articles-categories/', {
+          const response = await fetch('https://artuckeavenuebackend-4.onrender.com/get-articles-categories/', {
               method: 'GET',
               headers: {
                   'Content-Type': 'application/json',
@@ -472,7 +472,7 @@ export default function MainContent({mode}) {
             <CardMedia
               component="img"
               alt="green iguana"
-              image={`http://127.0.0.1:8000${savedEntries[0].thumbnail}`} // the base64 image
+              image={`https://artuckeavenuebackend-4.onrender.com0${savedEntries[0].thumbnail}`} // the base64 image
               aspect-ratio="16 / 9"
               sx={{
                 height: 350, // Set a fixed height for the image
@@ -508,7 +508,7 @@ export default function MainContent({mode}) {
             <CardMedia
               component="img"
               alt="green iguana"
-              image={`http://127.0.0.1:8000${savedEntries[1].thumbnail}`} // the base64 image
+              image={`https://artuckeavenuebackend-4.onrender.com${savedEntries[1].thumbnail}`} // the base64 image
               aspect-ratio="16 / 9"
               sx={{
                 height: 350, // Set a fixed height for the image
@@ -545,7 +545,7 @@ export default function MainContent({mode}) {
             <CardMedia
               component="img"
               alt="green iguana"
-              image={`http://127.0.0.1:8000${savedEntries[2].thumbnail}`}
+              image={`https://artuckeavenuebackend-4.onrender.com${savedEntries[2].thumbnail}`}
               aspect-ratio="16 / 9"
               sx={{
                 height: 350, // Set a fixed height for the image
@@ -582,7 +582,7 @@ export default function MainContent({mode}) {
             <CardMedia
               component="img"
               alt="green iguana"
-              image={`http://127.0.0.1:8000${savedEntries[3].thumbnail}`}
+              image={`https://artuckeavenuebackend-4.onrender.com${savedEntries[3].thumbnail}`}
               aspect-ratio="16 / 9"
               sx={{
                 height: 350, // Set a fixed height for the image
