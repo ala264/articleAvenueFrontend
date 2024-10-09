@@ -472,7 +472,7 @@ export default function MainContent({mode}) {
             <CardMedia
               component="img"
               alt="green iguana"
-              image={`https://artuckeavenuebackend-4.onrender.com0${savedEntries[0].thumbnail}`} // the base64 image
+              image={`https://artuckeavenuebackend-4.onrender.com${savedEntries[0].thumbnail}`} // the base64 image
               aspect-ratio="16 / 9"
               sx={{
                 height: 350, // Set a fixed height for the image
