@@ -181,6 +181,15 @@ export default function SignIn({ setIsAuthenticated }) {
         <CssBaseline enableColorScheme />
         <SignInContainer direction="column" justifyContent="space-between">
           <Card variant="outlined">
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+          <SitemarkIcon />
+        </Box>
             <Typography
               component="h1"
               variant="h4"
