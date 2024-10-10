@@ -147,7 +147,7 @@ const TestComponentViewSaved = ({mode}) => {
         const content = convertToRaw(editorState.getCurrentContent());
         const descriptionContent = convertToRaw(description.getCurrentContent())
 
-        navigate('/create-post', {
+        navigate('/home/create-post', {
             state: { 
                 id: id, 
                 type: 'draft', 

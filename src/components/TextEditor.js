@@ -278,7 +278,7 @@ const RichTextEditor = ({ mode }) => {
             }
 
             setTimeout(() => {
-                navigate("/saved-drafts");
+                navigate("/home/saved-drafts");
             }, 500);
         }
         else{
@@ -316,7 +316,7 @@ const RichTextEditor = ({ mode }) => {
                     insert_completed_article(sessionData.username, rawContent, title, thumbnail, category, filename, rawDescription)
                 }
                 setTimeout(() => {
-                    navigate("/saved-posts");
+                    navigate("/home/saved-posts");
                 }, 500)
             
             }

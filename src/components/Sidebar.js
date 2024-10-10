@@ -12,13 +12,13 @@ function Sidebar({ mode }) {
 
   useEffect(() => {
     // Update active link based on current path
-    if (location.pathname === '/') {
+    if (location.pathname === '/home') {
       setActiveLink('home');
-    } else if (location.pathname === '/create-post') {
+    } else if (location.pathname === '/home/create-post') {
       setActiveLink('createNewPost');
-    } else if (location.pathname === '/saved-posts') {
+    } else if (location.pathname === '/home/saved-posts') {
       setActiveLink('yourArticles');
-    } else if (location.pathname === '/saved-drafts') {
+    } else if (location.pathname === '/home/saved-drafts') {
       setActiveLink('yourDrafts');
     }
   }, [location.pathname]);
@@ -28,16 +28,16 @@ function Sidebar({ mode }) {
         setActiveLink(link);
         switch (link) {
           case 'home':
-                navigate('/');
+                navigate('/home');
                 break;
             case 'createNewPost':
-                navigate('/create-post');
+                navigate('/home/create-post');
                 break;
             case 'yourArticles':
-                navigate('/saved-posts');
+                navigate('/home/saved-posts');
                 break;
             case 'yourDrafts':
-                navigate('/saved-drafts');
+                navigate('/home/saved-drafts');
                 break;
             default:
                 break;

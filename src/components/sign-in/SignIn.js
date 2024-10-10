@@ -123,7 +123,7 @@ export default function SignIn({ setIsAuthenticated }) {
           setPasswordError(false);
           setPasswordErrorMessage('')
           setIsAuthenticated(true); 
-          navigate('/')
+          navigate('/home')
         }
         else if(result.message === 'User not found'){
           console.log('hello')

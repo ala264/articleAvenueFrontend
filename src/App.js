@@ -115,17 +115,17 @@ function AppContent() {
         {/* Routes without Sidebar */}
         <Route path="/sign-in" element={<SignIn className="sign-in" setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/:username/:articleName" element={<Blog />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/become-an-author" element={<BecomeAuthor />} />
         <Route path="/:username" element={<MoreFromAuthor />} />
 
         {/* Routes with Sidebar */}
-        <Route path="/" element={isAuthenticated ? <LayoutWithSidebar mode = {mode} /> : <Navigate to="/sign-in" />} >
+        <Route path="/home" element={isAuthenticated ? <LayoutWithSidebar mode = {mode} /> : <Navigate to="/sign-in" />} >
           {/* Nested routes for authenticated users */}
           <Route index element={<HomePage  mode={mode} toggleColorMode={toggleColorMode}/>} /> {/* Default child route when at "/" */}
-          <Route path="saved-drafts" element={<TestComponentViewSaved mode={mode} toggleColorMode={toggleColorMode} />} />
-          <Route path="saved-posts" element={<Articles mode={mode} toggleColorMode={toggleColorMode} />} />
-          <Route path="create-post" element={<RichTextEditor mode={mode} toggleColorMode={toggleColorMode} />} />
+          <Route path="/home/saved-drafts" element={<TestComponentViewSaved mode={mode} toggleColorMode={toggleColorMode} />} />
+          <Route path="/home/saved-posts" element={<Articles mode={mode} toggleColorMode={toggleColorMode} />} />
+          <Route path="/home/create-post" element={<RichTextEditor mode={mode} toggleColorMode={toggleColorMode} />} />
         </Route>
       </Routes>
     </div>
