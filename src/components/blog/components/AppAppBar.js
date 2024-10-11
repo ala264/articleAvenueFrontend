@@ -47,7 +47,7 @@ export default function AppAppBar() {
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small" onClick={()=>{navigate("/home")}}>
+              <Button variant="text" color="info" size="small" onClick={()=>{navigate("/")}}>
                 Home
               </Button>
               <Button variant="text" color="info" size="small" onClick={()=>{navigate(`/${username}`)}}>
