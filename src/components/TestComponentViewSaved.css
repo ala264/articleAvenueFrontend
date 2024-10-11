@@ -16,21 +16,22 @@
     margin: auto;
 }
 
-/* Article thumbnail container */
 .article-thumbnail-container {
-    width: 70%;
-    max-height: 500px;
-    margin: auto;
+    aspect-ratio: 16 / 9;
+    max-height: 500px; /* Limits the height of the image container */
     border:none;
     padding: 0; 
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
 }
 
-/* Image styling */
 .article-thumbnail {
-    margin: auto;
-    width: 100%; 
+    width: 100%; /* Ensures the image doesn't exceed the container's width */
     object-fit: cover;
-    height: auto;
+    height: 100%;
+    display:block;
+    margin: auto;
 }
 
 /* Hover effect */
