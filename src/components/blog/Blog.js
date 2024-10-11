@@ -67,7 +67,7 @@ export default function Blog() {
     // Fetch the article based on the username and formatted article name in the URL
     const fetchArticle = async () => {
       try {
-        const response = await fetch(`https://artuckeavenuebackend-4.onrender.com/get-article-by-username-and-name/?username=${username}&name=${formattedArticleName}`, {
+        const response = await fetch(`https://artuckeavenuebackend-5.onrender.com/get-article-by-username-and-name/?username=${username}&name=${formattedArticleName}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ export default function Blog() {
           >&nbsp;&nbsp; &nbsp;&nbsp; Posted On: {formatDate(date)}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }} className="thumbnail container">
             <img 
-              src={`https://artuckeavenuebackend-4.onrender.com${thumbnail}`} 
+              src={`https://artuckeavenuebackend-5.onrender.com${thumbnail}`} 
               style={{ width: '40em', height: '20em',  }}
             />
           </div>

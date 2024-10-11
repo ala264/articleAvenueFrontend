@@ -24,7 +24,7 @@ function MoreFromAuthor() {
   useEffect(() => {
     const fetchAuthorData = async () => {
       try {
-        const response = await fetch('https://artuckeavenuebackend-4.onrender.com/get-author-info/', {
+        const response = await fetch('https://artuckeavenuebackend-5.onrender.com/get-author-info/', {
           method: 'POST',
 
           body: JSON.stringify({ username }),
@@ -138,7 +138,7 @@ function MoreFromAuthor() {
               {console.log(profilePic)}
 
               <img
-                src={`https://artuckeavenuebackend-4.onrender.com${profilePic}`}
+                src={`https://artuckeavenuebackend-5.onrender.com${profilePic}`}
                 style={{
                   float: 'left',
                   width: '100px',

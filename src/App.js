@@ -62,7 +62,7 @@ function AppContent() {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('https://artuckeavenuebackend-4.onrender.com/check-session/', {
+      const response = await fetch('https://artuckeavenuebackend-5.onrender.com/check-session/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

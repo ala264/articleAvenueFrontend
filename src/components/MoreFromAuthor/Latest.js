@@ -76,7 +76,7 @@ function Author({ authors, date, profilePic, name }) {
         <AvatarGroup max={3}>
             <Avatar
               alt={name}
-              src={`https://artuckeavenuebackend-4.onrender.com${profilePic}`}
+              src={`https://artuckeavenuebackend-5.onrender.com${profilePic}`}
               sx={{ width: 24, height: 24 }}
             />
         </AvatarGroup>
@@ -109,7 +109,7 @@ export default function Latest() {
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const articlesResponse = await fetch('https://artuckeavenuebackend-4.onrender.com/get-articles-by-username/', {
+        const articlesResponse = await fetch('https://artuckeavenuebackend-5.onrender.com/get-articles-by-username/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ export default function Latest() {
         const articlesData = await articlesResponse.json();
         setArticleInfo(articlesData || []);  // Ensure data is an array or empty array
 
-        const authorResponse = await fetch('https://artuckeavenuebackend-4.onrender.com/get-author-info/', {
+        const authorResponse = await fetch('https://artuckeavenuebackend-5.onrender.com/get-author-info/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

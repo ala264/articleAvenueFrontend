@@ -83,7 +83,7 @@ const Articles = ({ mode }) => {
             const username = await getSessionData();
             console.log('Username:', username); 
 
-            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/get-articles-by-username/', {
+            const response = await fetch('https://artuckeavenuebackend-5.onrender.com/get-articles-by-username/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ const Articles = ({ mode }) => {
 
     const getSessionData = async () => {
         try {
-            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/get-session-data/', {
+            const response = await fetch('https://artuckeavenuebackend-5.onrender.com/get-session-data/', {
                 method: 'GET',
                 credentials: 'include', 
                 headers: {
@@ -163,7 +163,7 @@ const Articles = ({ mode }) => {
 
         try {
             // Send DELETE request to the backend
-            const response = await fetch(`https://artuckeavenuebackend-4.onrender.com/delete-completed-article/${article_id}/`, {
+            const response = await fetch(`https://artuckeavenuebackend-5.onrender.com/delete-completed-article/${article_id}/`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -197,7 +197,7 @@ const Articles = ({ mode }) => {
                     {entry.thumbnail && (
                         <div className="article-thumbnail-container">
                             <img 
-                                src={`https://artuckeavenuebackend-4.onrender.com${entry.thumbnail}`} 
+                                src={`https://artuckeavenuebackend-5.onrender.com${entry.thumbnail}`} 
                                 className="article-thumbnail"
                                 alt={entry.title}
                             />

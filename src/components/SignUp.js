@@ -40,7 +40,7 @@ const SignUp = () => {
         }
 
         try {
-            const response = await fetch('https://artuckeavenuebackend-4.onrender.com/signup/', {
+            const response = await fetch('https://artuckeavenuebackend-5.onrender.com/signup/', {
                 method: 'POST',
                 body: form,
             });
