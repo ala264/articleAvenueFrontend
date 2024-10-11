@@ -170,7 +170,7 @@ export default function Blog() {
             />
           </div>
           </p>
-            <div style = {{ fontFamily:'Times New Roman, serif', marginLeft:'4em', marginTop:'4em', fontWeight:'bold', fontSize:'1.4em',}}>
+            <div style = {{ fontFamily:'Times New Roman, serif', marginLeft:'4em', marginTop:'4em', fontSize:'1.4em',}}>
               <Editor
                 editorState={article.editorState}
                 readOnly={true}

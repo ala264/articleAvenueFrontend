@@ -302,7 +302,7 @@ const RichTextEditor = ({ mode }) => {
             Object.keys(rawContent.entityMap).length === 0 
         );
 
-        if (title && title !== "") {
+        if (title && title !== "" && category != "" && thumbnail != null && !isContentEmpty && !isDescriptionEmpty) {
 
             if(!isContentEmpty || !isDescriptionEmpty){
                 if (type !== "") {
@@ -321,11 +321,11 @@ const RichTextEditor = ({ mode }) => {
             
             }
             else{
-                alert("please add content to the article")
+                alert("Please enter all fields")
             }
         }
         else{
-            alert("please enter a title")
+            alert("Please enter all fields")
         }
     };
 
