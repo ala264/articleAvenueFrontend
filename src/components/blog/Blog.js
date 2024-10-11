@@ -140,7 +140,7 @@ export default function Blog() {
          >Written By: &nbsp;
          </p>
          <Link 
-          to = {`https://article-avenue-frontend.vercel.app/${username}`}
+          to = {`https://articleavenue.vercel.app/${username}`}
           style={{
               fontWeight:'bold',
               fontFamily:'Times New Roman, serif',
