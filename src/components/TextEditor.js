@@ -302,7 +302,7 @@ const RichTextEditor = ({ mode }) => {
             Object.keys(rawContent.entityMap).length === 0 
         );
 
-        if (title && title !== "" && category != "" && thumbnail != null) {
+        if (title && title !== "" && category != "" && thumbnail != null && !isContentEmpty && !isDescriptionEmpty) {
 
             if(!isContentEmpty || !isDescriptionEmpty){
                 if (type !== "") {
