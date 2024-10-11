@@ -321,11 +321,11 @@ const RichTextEditor = ({ mode }) => {
             
             }
             else{
-                alert("please add content to the article")
+                alert("Please enter all fields")
             }
         }
         else{
-            alert("please enter a title")
+            alert("Please enter all fields")
         }
     };
 
