@@ -20,6 +20,7 @@ import TemplateFrame from './components/sign-in/TemplateFrame';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import getSignInTheme from './components/sign-in/theme/getSignInTheme';
+import { Analytics } from "@vercel/analytics/react"
 
 function AppContent() {
   const location = useLocation();
@@ -135,6 +136,7 @@ function AppContent() {
 function App() {
   return (
     <Router>
+      <Analytics></Analytics>
       <AppContent />
     </Router>
   );
