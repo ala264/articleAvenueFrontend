@@ -611,9 +611,9 @@ export default function MainContent({mode}) {
       </Grid>
       <div>
       {savedEntries.length > 4 && (
-        <Typography variant="h2" gutterBottom fontFamily='Roboto, sans-seriff'>
-          Latest
-        </Typography>
+        <Typography variant="h2" gutterBottom  fontFamily='Playfair Display, serif'  sx={{ marginTop: '35px' }} >
+        Latest
+      </Typography>
       )} 
       <Grid container spacing={8} columns={12} sx={{ my: 4 }}>
         {savedEntries.slice(4).map((article, index) => (
