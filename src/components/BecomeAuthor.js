@@ -5,6 +5,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import getSignInTheme from './sign-in/theme/getSignInTheme';
 import Footer from './blog/components/Footer';
 import Button from '@mui/material/Button'; // Import MUI Button
+import { useNavigate } from 'react-router-dom';  // Import useParams from react-router-dom
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { IconButton } from '@mui/material';
 
 const BecomeAuthor = () => {
   const [response, setResponse] = useState('');
@@ -16,6 +19,12 @@ const BecomeAuthor = () => {
   // Create themes after the mode is initialized
   const defaultTheme = createTheme({ palette: { mode } });
   const SignInTheme = createTheme(getSignInTheme(mode));
+
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1); // Go back to the previous route
+  };
 
   const toggleCustomTheme = () => {
     setShowCustomTheme((prev) => !prev);
@@ -83,6 +92,9 @@ const BecomeAuthor = () => {
     >
       <ThemeProvider theme={showCustomTheme ? SignInTheme : defaultTheme}>
         <CssBaseline enableColorScheme />
+          <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back" style={{float:"left", marginLeft: "0.4em"}}>
+            <ArrowBackIcon></ArrowBackIcon>
+          </IconButton>
         <div>
           <h2 style= {{marginTop:'50px'}}>Why do you want to become an author?</h2>
           <form onSubmit={handleSubmit}>

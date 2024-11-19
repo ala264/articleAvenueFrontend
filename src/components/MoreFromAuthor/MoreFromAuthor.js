@@ -134,8 +134,8 @@ function MoreFromAuthor() {
               }}
             >
                  <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back" style={{float:"left"}}>
-         <ArrowBackIcon></ArrowBackIcon>
-       </IconButton>
+                  <ArrowBackIcon></ArrowBackIcon>
+                 </IconButton>
               <h1
                 style={{
                   textAlign: 'left',
