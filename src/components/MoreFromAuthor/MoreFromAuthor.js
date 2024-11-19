@@ -11,7 +11,6 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Latest from './Latest';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useNavigate } from 'react-router-dom';
 
 function MoreFromAuthor() {
   const [authorDesc, setAuthorDesc] = useState('');
