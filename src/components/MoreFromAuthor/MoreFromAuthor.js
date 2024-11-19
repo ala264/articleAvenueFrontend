@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Latest from './Latest';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { IconButton } from '@mui/material';
 
 function MoreFromAuthor() {
   const [authorDesc, setAuthorDesc] = useState('');
@@ -21,7 +22,12 @@ function MoreFromAuthor() {
   const [showCustomTheme, setShowCustomTheme] = useState(true);
   const blogTheme = createTheme(getBlogTheme(mode));
   const defaultTheme = createTheme({ palette: { mode } });
+ 
+  const navigate = useNavigate();
 
+  const handleBackClick = () => {
+    navigate(-1); // Go back to the previous route
+  };
   
 
   useEffect(() => {
@@ -107,6 +113,7 @@ function MoreFromAuthor() {
 */
   return (
     <div>
+      
       <TemplateFrame
         toggleCustomTheme={toggleCustomTheme}
         showCustomTheme={showCustomTheme}
@@ -114,8 +121,8 @@ function MoreFromAuthor() {
         toggleColorMode={toggleColorMode}
       >
   
-
         <ThemeProvider theme={showCustomTheme ? blogTheme : defaultTheme}>
+  
           <CssBaseline enableColorScheme />
           <div style={{ overflow: 'hidden'}} className="overrideStyles">
             <div
@@ -126,6 +133,9 @@ function MoreFromAuthor() {
                 overflow: 'hidden',
               }}
             >
+                 <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back" style={{float:"left"}}>
+         <ArrowBackIcon></ArrowBackIcon>
+       </IconButton>
               <h1
                 style={{
                   textAlign: 'left',

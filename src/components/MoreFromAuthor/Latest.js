@@ -158,6 +158,7 @@ export default function Latest() {
     navigate(`/${username}/${formattedTitle}`);
   };
 
+
   if (loading) {
     return <Typography>Loading...</Typography>;  // Show a loading message while fetching
   }
