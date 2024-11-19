@@ -609,7 +609,7 @@ export default function MainContent({mode}) {
       </Grid>
       <div>
       {savedEntries.length > 4 && (
-        <Typography variant="h2" gutterBottom fontFamily='Roboto, sans-seriff'>
+        <Typography variant="h2" gutterBottom  fontFamily='Playfair Display, serif'  sx={{ marginTop: '35px' }} >
           Latest
         </Typography>
       )} 
