@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://articleavenue.vercel.app/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Example Article -->
+  <url>
+    <loc>https://articleavenue.vercel.app/armanl264//SFU-Face-Backlash-Over-Enrollment-Delays</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Example Author Profile -->
+  <url>
+    <loc>https://articleavenue.vercel.app/armanl264</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
