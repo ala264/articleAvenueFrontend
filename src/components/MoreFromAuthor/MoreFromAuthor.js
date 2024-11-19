@@ -23,11 +23,7 @@ function MoreFromAuthor() {
   const blogTheme = createTheme(getBlogTheme(mode));
   const defaultTheme = createTheme({ palette: { mode } });
 
-    const navigate = useNavigate();
   
-    const handleBackClick = () => {
-      navigate(-1); // Go back to the previous route
-    };
 
   useEffect(() => {
     const fetchAuthorData = async () => {
@@ -118,9 +114,7 @@ function MoreFromAuthor() {
         mode={mode}
         toggleColorMode={toggleColorMode}
       >
-      <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back">
-      <ArrowBackIcon />
-    </IconButton>
+  
 
         <ThemeProvider theme={showCustomTheme ? blogTheme : defaultTheme}>
           <CssBaseline enableColorScheme />
