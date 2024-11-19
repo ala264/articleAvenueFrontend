@@ -92,7 +92,7 @@ const BecomeAuthor = () => {
     >
       <ThemeProvider theme={showCustomTheme ? SignInTheme : defaultTheme}>
         <CssBaseline enableColorScheme />
-          <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back" style={{float:"left", marginLeft: "0.4em"}}>
+          <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back" style={{float:"left", marginLeft: "0.4em", marginTop: "0.2em"}}>
             <ArrowBackIcon></ArrowBackIcon>
           </IconButton>
         <div>
