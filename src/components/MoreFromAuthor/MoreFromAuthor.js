@@ -10,6 +10,8 @@ import getBlogTheme from '../blog/theme/getBlogTheme';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Latest from './Latest';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useNavigate } from 'react-router-dom';
 
 function MoreFromAuthor() {
   const [authorDesc, setAuthorDesc] = useState('');
@@ -20,6 +22,12 @@ function MoreFromAuthor() {
   const [showCustomTheme, setShowCustomTheme] = useState(true);
   const blogTheme = createTheme(getBlogTheme(mode));
   const defaultTheme = createTheme({ palette: { mode } });
+
+    const navigate = useNavigate();
+  
+    const handleBackClick = () => {
+      navigate(-1); // Go back to the previous route
+    };
 
   useEffect(() => {
     const fetchAuthorData = async () => {
@@ -110,6 +118,10 @@ function MoreFromAuthor() {
         mode={mode}
         toggleColorMode={toggleColorMode}
       >
+      <IconButton onClick={handleBackClick} edge="start" color="inherit" aria-label="back">
+      <ArrowBackIcon />
+    </IconButton>
+
         <ThemeProvider theme={showCustomTheme ? blogTheme : defaultTheme}>
           <CssBaseline enableColorScheme />
           <div style={{ overflow: 'hidden'}} className="overrideStyles">
