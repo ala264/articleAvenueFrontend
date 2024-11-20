@@ -135,7 +135,6 @@ function AppContent() {
 
 function App() {
   return (
-    
     <Router>
       <Analytics></Analytics>
       <AppContent />
