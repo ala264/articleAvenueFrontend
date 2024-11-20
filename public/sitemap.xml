@@ -8,13 +8,32 @@
   </url>
   <!-- Example Article -->
   <url>
-    <loc>https://articleavenue.vercel.app/armanl264//SFU-Face-Backlash-Over-Enrollment-Delays</loc>
+    <loc>https://articleavenue.vercel.app/armanl264/SFU-Face-Backlash-Over-Enrollment-Delays</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://articleavenue.vercel.app/hathaull/Atomic-Habits:-Small-Changes,-Remarkable-Results</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://articleavenue.vercel.app/armanl264/Artificial-Intelligence:-Transformations-and-Challenges</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Example Author Profile -->
   <url>
     <loc>https://articleavenue.vercel.app/armanl264</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://articleavenue.vercel.app/hathaull</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
