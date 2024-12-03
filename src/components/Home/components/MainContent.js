@@ -476,6 +476,7 @@ export default function MainContent({mode}) {
               alt="green iguana"
               image={`https://artuckeavenuebackend-5.onrender.com${savedEntries[0].thumbnail}`} // the base64 image
               aspect-ratio="16 / 9"
+              loading="lazy"
               sx={{
                 height: 350, // Set a fixed height for the image
                 objectFit: 'cover', // Ensures the aspect ratio is maintained
@@ -512,6 +513,7 @@ export default function MainContent({mode}) {
               alt="green iguana"
               image={`https://artuckeavenuebackend-5.onrender.com${savedEntries[1].thumbnail}`} // the base64 image
               aspect-ratio="16 / 9"
+              loading="lazy"
               sx={{
                 height: 350, // Set a fixed height for the image
                 objectFit: 'cover', // Ensures the aspect ratio is maintained
@@ -549,6 +551,7 @@ export default function MainContent({mode}) {
               alt="green iguana"
               image={`https://artuckeavenuebackend-5.onrender.com${savedEntries[2].thumbnail}`}
               aspect-ratio="16 / 9"
+              loading="lazy"
               sx={{
                 height: 350, // Set a fixed height for the image
                 objectFit: 'cover', // Ensures the aspect ratio is maintained
@@ -586,6 +589,7 @@ export default function MainContent({mode}) {
               alt="green iguana"
               image={`https://artuckeavenuebackend-5.onrender.com${savedEntries[3].thumbnail}`}
               aspect-ratio="16 / 9"
+              loading="lazy"
               sx={{
                 height: 350, // Set a fixed height for the image
                 objectFit: 'cover', // Ensures the aspect ratio is maintained
