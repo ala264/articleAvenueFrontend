@@ -165,6 +165,7 @@ export default function Blog() {
           >&nbsp;&nbsp; &nbsp;&nbsp; Posted On: {formatDate(date)}
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }} className="thumbnail container">
             <img 
+              loading="lazy"
               src={`https://artuckeavenuebackend-5.onrender.com${thumbnail}`} 
               style={{ width: '40em', height: '20em',  }}
             />
@@ -182,6 +183,7 @@ export default function Blog() {
                         const { src, width, height } = entity.getData();
                         return (
                           <img
+                            loading="lazy"
                             src={src}
                             alt=""
                             style={{ width: width || '100%', height: height || 'auto', objectFit: 'cover' }}
