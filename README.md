@@ -1,66 +1,37 @@
-## Available Scripts
+# Article Avenue Frontend
+## Overview
+Article Avenue is a full-stack web application for creating, publishing, and discovering articles. Users can sign up, write and edit articles, save drafts, publish completed posts, and browse public article and author pages.
 
-In the project directory, you can run:
+This repository contains the React frontend of the application, which communicates with a Django backend and PostgreSQL database through REST APIs.
 
-### `npm start`
+## Technical Details
+The frontend was built with React and uses Material UI and Bootstrap for interface components and styling. React Router is used to manage navigation between public pages, authentication pages, and protected user pages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application communicates with the Django backend through REST API requests using `fetch()`. Session-based authentication is used to determine whether a user can access protected routes such as the dashboard, saved drafts, saved posts, and the article editor.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Draft.js is used for rich-text article creation and rendering, including formatted text and embedded images. The frontend also includes light and dark themes, with the user's theme preference stored in `localStorage`.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User sign-up and sign-in
+- Public article and author pages
+- Rich-text article creation and editing
+- Draft saving and publishing
+- Article thumbnail and embedded image support
+- Edit and delete published articles
+- Protected pages for authenticated users
+- Light and dark mode
 
-### `npm run build`
+## Architecture
+The diagram below shows the overall Article Avenue architecture and how the React frontend connects to the Django backend and PostgreSQL database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="100%" alt="Article Avenue Architecture" src="https://github.com/user-attachments/assets/bbae9bf8-465d-4a37-b5a7-9f466081bd7e">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges
+One challenge was improving the performance of the public article page. Article thumbnail images were initially stored directly in PostgreSQL, which increased the amount of data transferred when loading articles. We changed the design so that thumbnail image files were stored on the backend server while the database stored references to them instead. This reduced the amount of data being transferred and improved response times.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Related Repositories
+This frontend repository was created after the original Article Avenue project was separated into frontend and backend repositories to support deployment.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Backend repository: [Article Avenue Backend](https://github.com/ala264/articleAvenueBackend)
+- Original combined repository: [Article Avenue (Earlier Version)](https://github.com/hathaull/article_app)
